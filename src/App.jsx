@@ -7,5 +7,4 @@ export default class App extends Component{
             <h1>新的项目</h1>
         )
     }
-    
 }
