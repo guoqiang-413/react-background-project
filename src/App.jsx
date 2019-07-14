@@ -4,7 +4,10 @@ export default class App extends Component{
 
     render (){
         return (
-            <h1>新的项目</h1>
+           <div>
+                <h1>新的项目</h1>
+                <span>sa</span>
+           </div>
         )
     }
 }
