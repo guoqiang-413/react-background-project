@@ -1,13 +1,19 @@
 import React,{ Component } from 'react'
+import {BrowserRouter,Route,Switch} from 'react-router-dom'
+
+import Login from './pages/login/Login'
+import Admin from "./pages/Admin/Admin"
 
 export default class App extends Component{
-
+    
     render (){
         return (
-           <div>
-                <h1>新的项目</h1>
-                <span>sa</span>
-           </div>
+            <BrowserRouter>
+                <Switch>
+                    <Route path="/Login" component={Login}/>
+                    <Route path="/Admin" component={Admin}/>
+                </Switch>
+            </BrowserRouter>
         )
     }
 }
